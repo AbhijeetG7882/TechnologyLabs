@@ -16,7 +16,7 @@ import cucumber.api.junit.Cucumber;
 		//tags = {"@SmokeTest" , "@RegressionTest"} -> AND
 		//tags = {"@SmokeTest , @RegressionTest"} -> OR
 		)
-
+  
 public class TestRunner {
 
 }
