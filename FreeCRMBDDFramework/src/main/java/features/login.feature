@@ -1,13 +1,10 @@
-Feature: Test Tagged Hooks 
+Feature: Free CRM Login Feature
 
-@First 
-Scenario: This is First test
-	Given this is the first step 
-	When this is the second step 
-	Then this is the third step 
-	
-@Second 
-Scenario: This is Second test
-	Given this is the first step 
-	When this is the second step 
-	Then this is the third step 
+without Examples Keyword
+Scenario: Free CRM Login Test Scenario
+
+Given User is already on login page
+When title of login page is Free CRM
+Then user enters "abhijeet.g7882@gmail.com" and "Test12345"
+Then user clicks on login button
+Then user is on home page
