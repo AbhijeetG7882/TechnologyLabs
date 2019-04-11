@@ -14,7 +14,7 @@ import junit.framework.Assert;
 public class LoginStepDefinition {
 
 	WebDriver webDriver;
- 
+
 	@Given("^User is already on login page$")
 	public void user_is_already_on_login_page() {
 		System.setProperty("webDriver.chrome.driver", "chromedriver");
