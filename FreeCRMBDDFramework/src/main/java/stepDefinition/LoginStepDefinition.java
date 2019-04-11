@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -22,6 +21,7 @@ public class LoginStepDefinition {
 
 		webDriver = new ChromeDriver();
 		webDriver.get("https://ui.freecrm.com/");
+		System.out.println("I am in user_is_already_on_login_page");
 	}
 
 	@When("^title of login page is Free CRM$")
@@ -29,6 +29,7 @@ public class LoginStepDefinition {
 		String title = webDriver.getTitle();
 		System.out.println(title);
 		Assert.assertEquals("CRM", title);
+		System.out.println("I am in title_of_login_page_is_free_CRM");
 	}
 
 	@Then("^user enters \"(.*)\" and \"(.*)\"$")
